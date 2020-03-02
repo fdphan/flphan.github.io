@@ -11,26 +11,83 @@ You don't need to have super pretty css. But it should have the outlines of a go
     </head>
     <body>
         <p><strong>Floyd Phan</strong></p>
-        <a href = "https://www.github.com">About</a>
-        <a href = "https://www.github.com">Projects</a>
-        <a href = "https://www.instagram.com">More</a><br>
-        <img src = "p1.jpg" alt = "squirrel" height = "100" width = "100">
-        <p>My name is Floyd, Umass student with major in Computer Science.</p>
-    
-    <div id = "pl">
+        <div1 class = "row1">
+            <div class = "column1">
+                <a href = "https://www.github.com" style = "background-color: green"><h1>About</h1></a>
+            </div>
+            <div class = "column1">
+                <a href = "https://www.github.com" style = "background-color: aqua"><h1>Projects</h1></a>
+            </div>
+            <div class = "column1">
+                <a href = "https://www.instagram.com" style = "background-color: lightgrey"><h1>More</h1></a><br>
+            </div>
+        </div1>
+        <img  class = "img1" src = "p1.jpg" alt = "squirrel"  height = "200" width = "200">
+        <div class = "text1">
+            <p >My name is Floyd, a Umass student with major in Computer Science.</p>
+        </div>
+        
+    <div class = "pl">
         <strong>
-            Project List
+            Project List:
         </strong>
     </div>
+
     <style>
+    .text1{
+        left: 650px;
+    }
+    .row1{
+        width: auto;
+        height: 200;     
+        display: grid;
+        background: lightgray;
+        grid-template-columns: auto auto auto;
+    }
+    img{
+        position : relative;
+        height : 200px;
+        width : 200px;
+    }
+    .img1{
+        left: 650px;
+    }
     .pl{
         background-color: pink;
         width: 500px;
+        padding: 10px;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .column1{
+        position: relative;
+        float:left;
+        width: 33.3%;
+        height: 100px;
+    }
+    .column{
+        float: left;
+        width : 50%;
+        padding : 10px;
+        height: 300px;
+    }
+
+    .row:after{
+        content: "";
+        display:table;
+        clear: both;
     }
     </style>
     <div class = "row">
-        <div class = "column">Project 1</div>
-        <div class = "column">Project 2</div>
+        <div class = "column" style = "background-color: lightcoral;">
+            <h2>Project 1</h2>
+            <p>*Something interesting*</p>
+        </div>
+        <div class = "column" style = "background-color: lightblue;">
+            <h2>Project 2</h2>
+            <p>*Another something interesting*</p>
+        </div>
     </div>
 
     </body>
