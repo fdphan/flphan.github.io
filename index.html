@@ -24,13 +24,14 @@ You don't need to have super pretty css. But it should have the outlines of a go
         </div1>
         <img  class = "img1" src = "p1.jpg" alt = "squirrel"  height = "200" width = "200">
         <div class = "text1">
-            <p >My name is Floyd, a Umass student with major in Computer Science.</p>
+            <p><center>My name is Floyd, a Umass student with major in Computer Science.</center></p>
         </div>
         
     <div class = "pl">
-        <strong>
+        <center><h2><strong>
             Project List:
-        </strong>
+        </strong></h2>
+    </center>   
     </div>
 
     <style>
@@ -54,14 +55,16 @@ You don't need to have super pretty css. But it should have the outlines of a go
     }
     .pl{
         background-color: pink;
-        width: 500px;
-        padding: 10px;
+        position: relative;
+        padding: 30px;
+        text-align: center;
     }
     *{
         box-sizing: border-box;
     }
     .column1{
         position: relative;
+        text-align: end;
         float:left;
         width: 33.3%;
         height: 100px;
@@ -78,6 +81,28 @@ You don't need to have super pretty css. But it should have the outlines of a go
         display:table;
         clear: both;
     }
+
+    #contact1{
+        color:plum;
+        padding: 70px 50px;
+        text-align: center;
+        display: inline-block;
+        background-color: black;
+    }
+    #contact2{
+        color:black;
+        padding: 70px 50px;
+        text-align: center;
+        display: inline-block;
+        background-color: green;
+    }
+    #contact3{
+        color:plum;
+        padding: 70px 50px;
+        text-align: center;
+        display: inline-block;
+        background-color: black;
+    }
     </style>
     <div class = "row">
         <div class = "column" style = "background-color: lightcoral;">
@@ -90,6 +115,22 @@ You don't need to have super pretty css. But it should have the outlines of a go
         </div>
     </div>
 
+    <div>
+        <center>
+            <h1>Contact</h1>
+        </center><br>
+        <center>
+            <a id = "contact1" href = "https://www.google.com" target = "_blank">Twitter</a>
+            <a id = "contact2" href = "https://www.google.com" target = "_blank">Linkedin</a>
+            <a id = "contact3" href = "https://www.google.com" target = "_blank">GitHub</a>
+
+        </center>
+    </div>
+    <div class ="footer">
+        <center>
+            Copyright ©	Floyd Phan
+        </center>
+    </div>
     </body>
 
 </html>
